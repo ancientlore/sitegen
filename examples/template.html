@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Test it up</title> 
+<link rel="stylesheet" TYPE="text/css" HREF="test.css">
+</head>
+<body>
+<div id="menuDiv"><ul class="menu"><li>&nbsp;&nbsp;</li>{{range .Sections}}<li{{if .Active}} class="menuactive"{{end}}><a href="{{.Filename}}">{{.Name}}</a></li>{{end}}</ul></div>
+<div id="mainDiv">
+{{with .ActiveSection}}<ul class="submenu">{{range .Pages}}<li><a href="{{.Filename}}">{{.Name}}</a></li>{{end}}{{end}}</ul>
+{{.Content}}
+</div>
+</body>
+</html>

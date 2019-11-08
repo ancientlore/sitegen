@@ -1,0 +1,4 @@
+http://localhost/index.html
+http://localhost/stuff.html
+http://localhost/stuff_page_2.html
+http://localhost/test.css

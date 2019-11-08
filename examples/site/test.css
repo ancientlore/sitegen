@@ -1,0 +1,114 @@
+body {
+	background-color: black;
+	color: #822C13;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0px;
+}
+h1 {
+	color: #822C13;
+}
+h2 {
+	color: #822C13;
+}
+h3 {
+	color: #822C13;
+}
+a {
+	text-decoration: none !important;
+	color: #6C687F;
+}
+a:link {
+	text-decoration: none !important;
+}
+a:visited {
+	text-decoration: none !important;
+}
+a:hover {
+	text-decoration: underline !important;
+	color: #94A0B8;
+}
+a:active {
+	text-decoration: underline !important;
+}
+
+hr {
+	border: 1px solid #822C13;
+}
+
+#mainDiv {
+	color: #822C13;
+	background-color: #111111;
+	margin: 0px 100px 0px 100px;
+	padding: 0px 16px 8px 16px;
+}
+
+#menuDiv {
+	margin: 6px 100px 0px 100px;
+	padding: 0;
+}
+
+/* top-level menu */
+ul.menu {
+	list-style: none;
+	padding: 2px 0px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0px;
+	white-space: nowrap;
+}
+ul.menu li {
+	display: inline;
+	white-space: nowrap;
+}
+ul.menu li a {
+	text-decoration: none;
+	color: #6C687F;
+	padding: 1px 10px 6px 10px;
+}
+ul.menu li a:hover {
+	text-decoration: underline;
+	color: #94A0B8;
+}
+
+/* mark the active menu item with this class */
+ul.menu li.menuactive {
+	background-color: #111111;
+}
+ul.menu li.menuactive a {
+	background-color: #111111;
+	color: #822C13;
+}
+ul.menu li.menuactive a:hover {
+	background-color: #111111;
+	text-decoration: underline;
+	color: #822C13;
+}
+
+/* submenu */
+ul.submenu {
+	list-style: none;
+	padding: 4px 0px 0px 0px;
+	font-family: Arial;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: #111111;
+	margin: 0px;
+	color: #822C13;
+}
+ul.submenu li {
+	display: inline;
+	white-space: nowrap;
+	padding-right: 6px;
+}
+ul.submenu li a {
+	color: #6C687F;
+	text-decoration: none;
+}
+ul.submenu li a:hover {
+	color: #94A0B8;
+	text-decoration: underline;
+}
