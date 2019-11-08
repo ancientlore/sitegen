@@ -107,9 +107,35 @@ func renderContent(i, j int) string {
 	if err != nil {
 		panic(err)
 	}
-	outb := blackfriday.Run(b, blackfriday.WithExtensions(blackfriday.CommonExtensions))
+	// outb := blackfriday.Run(b, blackfriday.WithExtensions(blackfriday.CommonExtensions))
 	// outb := blackfriday.MarkdownCommon(b)
+	outb := renderMarkdown(b)
 	return string(outb)
+}
+
+func renderMarkdown(input []byte) []byte {
+	// set up the HTML renderer
+	htmlFlags := 0
+	htmlFlags |= blackfriday.HTML_USE_XHTML
+	htmlFlags |= blackfriday.HTML_USE_SMARTYPANTS
+	htmlFlags |= blackfriday.HTML_SMARTYPANTS_FRACTIONS
+	// htmlFlags |= blackfriday.HTML_SMARTYPANTS_LATEX_DASHES
+	htmlFlags |= blackfriday.HTML_SMARTYPANTS_DASHES
+	// htmlFlags |= HTML_SANITIZE_OUTPUT
+
+	renderer := blackfriday.HtmlRenderer(htmlFlags, "", "")
+
+	// set up the parser
+	extensions := 0
+	extensions |= blackfriday.EXTENSION_NO_INTRA_EMPHASIS
+	extensions |= blackfriday.EXTENSION_TABLES
+	extensions |= blackfriday.EXTENSION_FENCED_CODE
+	extensions |= blackfriday.EXTENSION_AUTOLINK
+	extensions |= blackfriday.EXTENSION_STRIKETHROUGH
+	extensions |= blackfriday.EXTENSION_SPACE_HEADERS
+	extensions |= blackfriday.EXTENSION_HEADER_IDS
+
+	return blackfriday.Markdown(input, renderer, extensions)
 }
 
 func readSiteMap(dir string) {
