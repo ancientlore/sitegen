@@ -1,0 +1,6 @@
+github.com/mitchellh/goconf v0.0.0-20121001043039-03740dab3bc5 h1:PeGkatdR4JLzIrPckIkIhkAdU2Z0SshzkwNmCUj5twg=
+github.com/mitchellh/goconf v0.0.0-20121001043039-03740dab3bc5/go.mod h1:wmYzpwe8is91E1dE+CXv0ZOrDrOBZ4XmLsdhYjG/fE8=
+github.com/russross/blackfriday v2.0.0+incompatible h1:cBXrhZNUf9C+La9/YpS+UHpUT8YD6Td9ZMSU9APFcsk=
+github.com/russross/blackfriday v2.0.0+incompatible/go.mod h1:JO/DiYxRf+HjHt06OyowR9PTA263kcR/rfWxYHBV53g=
+github.com/shurcooL/sanitized_anchor_name v1.0.0 h1:PdmoCO6wvbs+7yrJyMORt4/BmY5IYyJwS/kOiWx8mHo=
+github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
