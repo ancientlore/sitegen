@@ -34,6 +34,7 @@ type Data struct {
 	Sections      []Section
 	Content       string
 	ActiveSection *Section
+	ActivePage    *Page
 }
 
 var tmpl *template.Template
@@ -173,6 +174,7 @@ func main() {
 				d.Content = renderContent(i, j)
 				d.Sections[i].Active = true
 				d.ActiveSection = &d.Sections[i]
+				d.ActivePage = &d.Sections[i].Pages[j]
 				tmpl.Execute(f, d)
 				d.Sections[i].Active = false
 			}()
