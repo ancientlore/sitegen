@@ -2,3 +2,5 @@ github.com/mitchellh/goconf v0.0.0-20121001043039-03740dab3bc5 h1:PeGkatdR4JLzIr
 github.com/mitchellh/goconf v0.0.0-20121001043039-03740dab3bc5/go.mod h1:wmYzpwe8is91E1dE+CXv0ZOrDrOBZ4XmLsdhYjG/fE8=
 github.com/russross/blackfriday v1.5.1 h1:B8ZN6pD4PVofmlDCDUdELeYrbsVIDM/bpjW3v3zgcRc=
 github.com/russross/blackfriday v1.5.1/go.mod h1:JO/DiYxRf+HjHt06OyowR9PTA263kcR/rfWxYHBV53g=
+github.com/russross/blackfriday v1.5.2 h1:HyvC0ARfnZBqnXwABFeSZHpKvJHJJfPz81GNueLj0oo=
+github.com/russross/blackfriday v1.5.2/go.mod h1:JO/DiYxRf+HjHt06OyowR9PTA263kcR/rfWxYHBV53g=
